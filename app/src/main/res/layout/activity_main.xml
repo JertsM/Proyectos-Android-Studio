@@ -9,10 +9,35 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sumar">
+            </RadioButton>
+
+            <RadioButton
+            android:id="@+id/radioButtonSubstract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restar">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
