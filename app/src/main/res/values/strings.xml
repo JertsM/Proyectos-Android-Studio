@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">FirstApp</string>
-    <string name="titulo">Calculadora</string>
-    <string name="input_first_data">Introduzca el primer valor para operar:</string>
-    <string name="input_second_data">Introduzca el segundo valor para operar:</string>
-</resources>
