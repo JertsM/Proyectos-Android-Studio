@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".MainActivity"
+        android:background="#c0ebf0"
         tools:viewBindingIgnore="true">
 
         <TextView
@@ -59,9 +60,9 @@
             android:layout_width="40dp"
             android:layout_height="50dp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMaxTextSize="10sp"
+            android:autoSizeMaxTextSize="9sp"
             android:autoSizeMinTextSize="10sp"
-            android:autoSizeStepGranularity="2sp"
+            android:autoSizeStepGranularity="5sp"
             android:layout_gravity="center"
             android:autofillHints=""
             android:ems="10"
@@ -72,6 +73,7 @@
             tools:ignore="LabelFor,RtlSymmetry,SpUsage" />
 
         <RadioGroup
+            android:id="@id/radioGroup"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -84,7 +86,6 @@
                 android:layout_gravity="center"
                 android:translationY="10dp"
                 android:translationX="-155dp"
-                android:onClick="onRadioButtonClicked"
                 android:text="Sumar"
                 tools:ignore="HardcodedText" />
 
@@ -96,7 +97,6 @@
                 android:layout_gravity="center"
                 android:translationY="0dp"
                 android:translationX="-155dp"
-                android:onClick="onRadioButtonClicked"
                 android:text="Restar"
                 tools:ignore="HardcodedText" />
 
@@ -121,7 +121,7 @@
             android:inputType="phone"
             android:translationX="0dp"
             android:translationY="-300dp"
-            android:textSize="50dp"
+            android:textSize="20dp"
             tools:ignore="LabelFor,RtlSymmetry,SpUsage" />
     </LinearLayout>
 
