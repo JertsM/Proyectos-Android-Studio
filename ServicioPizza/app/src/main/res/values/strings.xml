@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ServicioPizza</string>
+    <string name="jamon">Jamón</string>
+    <string name="champinhones">Champiñones</string>
+    <string name="aceitunas">Aceitunas</string>
+    <string name="selecTodo">Escoger todas las opciones</string>
+    <string name="aDomi">Entrega a domicilio</string>
+    <string name="enLoc">Recogida en local</string>
 </resources>
