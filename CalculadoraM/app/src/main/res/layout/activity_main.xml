@@ -31,7 +31,7 @@
             android:translationX="-80sp"
             android:text="@string/input_first_data" />
 
-        <!-- Cuadro de texto rellenable -->
+        <!-- Cuadro de texto -->
         <EditText
             android:id="@+id/editText"
             android:layout_width="40dp"
@@ -54,7 +54,7 @@
             android:translationX="-75dp"
             android:text="@string/input_second_data" />
 
-        <!-- Cuadro de texto rellenable -->
+        <!-- Cuadro de texto -->
         <EditText
             android:id="@+id/editText2"
             android:layout_width="40dp"
