@@ -3,6 +3,8 @@ package com.example.serviciopizza
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -94,10 +96,10 @@ class MainActivityMauro : AppCompatActivity() {
             builder.setTitle("Ventana de confirmación:")
             builder.setMessage("¿Está seguro de que desea continuar?")
             builder.setCancelable(false)
-            builder.setPositiveButton("Continuar", DialogInterface.OnClickListener { dialog, id ->
+            builder.setPositiveButton("Continuar", DialogInterface.OnClickListener { _, _ ->
                 Toast.makeText(this, "Has aceptado el pedido", Toast.LENGTH_LONG).show()
             })
-            builder.setNegativeButton("Cancelar", DialogInterface.OnClickListener { dialog, id ->
+            builder.setNegativeButton("Cancelar", DialogInterface.OnClickListener { dialog, _ ->
                 dialog.dismiss()
             })
             builder.show()
@@ -121,7 +123,28 @@ class MainActivityMauro : AppCompatActivity() {
         }
     }
 
+    // Métodos para implementar el menú
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
 
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.itmOpciones -> {
+                Toast.makeText(this, "Opciones", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.itmAyuda -> {
+                Toast.makeText(this, "Ayuda", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.itmSalir -> {
+                finish()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }

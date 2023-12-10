@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PizzaService</string>
+    <string name="jamon">Ham</string>
+    <string name="champinhones">Mushrooms</string>
+    <string name="aceitunas">Olives</string>
+    <string name="selecTodo">Choose all options</string>
+    <string name="desSelecTodo">Clear selection</string>
+    <string name="aDomi">Home delivery</string>
+    <string name="enLoc">Local pickup</string>
+    <string name="confirmar">Confirm</string>
+    <string name="title_confirmation">Confirmation window</string>
+</resources>
