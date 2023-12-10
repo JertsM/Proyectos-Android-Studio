@@ -4,6 +4,9 @@
     <string name="champinhones">Champiñones</string>
     <string name="aceitunas">Aceitunas</string>
     <string name="selecTodo">Escoger todas las opciones</string>
+    <string name="desSelecTodo">Limpiar selección</string>
     <string name="aDomi">Entrega a domicilio</string>
     <string name="enLoc">Recogida en local</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="title_confirmation">Ventana de confirmación</string>
 </resources>

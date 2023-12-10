@@ -18,12 +18,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val Texto1 = findViewById<EditText>(R.id.editText)
-        val Texto2 = findViewById<EditText>(R.id.editText2)
-        val RadioButton = findViewById<RadioButton>(R.id.radioButtonSum)
-        val RadioButton2 = findViewById<RadioButton>(R.id.radioButtonSubstract)
-
-        val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
+        val Texto1 = binding.editText
+        val Texto2 = binding.editText2
+        val RadioButton = binding.radioButtonSum
+        val RadioButton2 = binding.radioButtonSubstract
 
         binding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
             when (checkedId) {

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,25 +8,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivityMauro"
     tools:ignore="ExtraText"
-    android:background="@drawable/fondorojo">
+    android:background="@color/red_light">
 
     <!-- Checkboxes -->
+
     <CheckBox
         android:id="@+id/cb_jamon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:text="@string/jamon"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></CheckBox>
-
-    <CheckBox
-        android:id="@+id/cb_champi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/champinhones"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></CheckBox>
 
@@ -32,49 +26,98 @@
         android:id="@+id/cb_aceitunas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="4dp"
         android:text="@string/aceitunas"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cb_jamon"></CheckBox>
+        app:layout_constraintTop_toBottomOf="@+id/cb_champi"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/cb_champi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/champinhones"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_todasOpciones"></CheckBox>
 
     <CheckBox
         android:id="@+id/cb_todasOpciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="95dp"
+        android:layout_marginStart="4dp"
         android:text="@string/selecTodo"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cb_aceitunas"
-        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+        app:layout_constraintTop_toBottomOf="@+id/cb_jamon"></CheckBox>
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/confirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datosPedido" />
 
     <!-- Botones -->
+
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/cb_todasOpciones"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_aceitunas">
 
         <RadioButton
             android:id="@+id/aDomicilio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/aDomi"/>
+            android:text="@string/aDomi"
+            android:textColor="@color/black" />
 
         <RadioButton
             android:id="@+id/enLocal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/enLoc"
+            android:textColor="@color/black"
             android:translationX="200dp"
             android:translationY="-31dp"
-            android:text="@string/enLoc"
-            app:layout_constraintStart_toEndOf="@+id/aDomicilio"
-            android:layout_marginStart="16dp"/>
+            app:layout_constraintStart_toEndOf="@+id/aDomicilio" />
+
     </RadioGroup>
-    />
+
+    <TextView
+        android:id="@+id/infoPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos del pedido:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/datosPedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+    <TextView
+        android:id="@+id/datosPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"></TextView>
+
+    <!-- Botón de confirmación-->
 </androidx.constraintlayout.widget.ConstraintLayout>
