@@ -18,7 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="70dp">
+            android:textSize="70dp"
+            android:textColor="@color/black">
 
         </TextView>
 
@@ -29,7 +30,8 @@
             android:layout_gravity="center"
             android:translationY="60sp"
             android:translationX="-80sp"
-            android:text="@string/input_first_data" />
+            android:text="@string/input_first_data"
+            android:textColor="@color/black"/>
 
         <!-- Cuadro de texto -->
         <EditText
@@ -43,7 +45,8 @@
             android:translationX="60dp"
             android:translationY="15dp"
             android:textSize="20dp"
-            tools:ignore="LabelFor,RtlSymmetry,SpUsage" />
+            tools:ignore="LabelFor,RtlSymmetry,SpUsage"
+            android:textColor="@color/black"/>
 
         <!-- Segundo texto -->
         <TextView
@@ -52,7 +55,8 @@
             android:layout_gravity="center"
             android:translationY="40dp"
             android:translationX="-75dp"
-            android:text="@string/input_second_data" />
+            android:text="@string/input_second_data"
+            android:textColor="@color/black"/>
 
         <!-- Cuadro de texto -->
         <EditText
@@ -70,13 +74,15 @@
             android:translationX="70dp"
             android:translationY="-5dp"
             android:textSize="20dp"
-            tools:ignore="LabelFor,RtlSymmetry,SpUsage" />
+            tools:ignore="LabelFor,RtlSymmetry,SpUsage"
+            android:textColor="@color/black"/>
 
         <RadioGroup
             android:id="@id/radioGroup"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <!-- Primer botón: Sumar -->
             <RadioButton
@@ -87,7 +93,8 @@
                 android:translationY="10dp"
                 android:translationX="-155dp"
                 android:text="Sumar"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:textColor="@color/black"/>
 
             <!-- Segundo botón: Restar -->
             <RadioButton
@@ -98,7 +105,8 @@
                 android:translationY="0dp"
                 android:translationX="-155dp"
                 android:text="Restar"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:textColor="@color/black"/>
 
         </RadioGroup>
 
@@ -108,7 +116,8 @@
             android:layout_height="20dp"
             android:translationY="-255dp"
             android:translationX="85dp"
-            android:text="@string/resultado" />
+            android:text="@string/resultado"
+            android:textColor="@color/black"/>
 
         <!-- Cuadro de texto: Resultado -->
         <EditText
@@ -122,7 +131,8 @@
             android:translationX="0dp"
             android:translationY="-300dp"
             android:textSize="20dp"
-            tools:ignore="LabelFor,RtlSymmetry,SpUsage" />
+            tools:ignore="LabelFor,RtlSymmetry,SpUsage"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
