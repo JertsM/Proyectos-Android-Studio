@@ -2,11 +2,9 @@ package com.example.composebotones
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
@@ -23,8 +21,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.compose_components.examples.Button.IconButtonExample
+import com.example.compose_components.examples.Button.OutlinedButtonExample
+import com.example.compose_components.examples.Button.TextButtonExample
 import com.example.composebotones.ui.theme.ComposeBotonesTheme
 
 class MainActivity : ComponentActivity() {
@@ -46,6 +46,17 @@ class MainActivity : ComponentActivity() {
 }
 
 @Preview(showSystemUi = true)
+@Composable
+fun botonesNuevos(){
+
+    Column (horizontalAlignment = Alignment.CenterHorizontally){
+        TextButtonExample()
+        OutlinedButtonExample()
+        IconButtonExample()
+    }
+}
+
+//@Preview(showSystemUi = true)
 @Composable
 fun GUI(){
     Column(
@@ -69,7 +80,7 @@ fun GUI(){
     }
 }
 
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
 @Composable
 fun Boton(text: String = "BotonEnArchivo"){
     val context = LocalContext.current
@@ -79,7 +90,7 @@ fun Boton(text: String = "BotonEnArchivo"){
     }
 }
 
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
 @Composable
 fun pruebaBotones(){
     Column(
@@ -89,7 +100,7 @@ fun pruebaBotones(){
     }
 }
 
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
 @Composable
 fun BotonConContador1(text: String = "BotonContador"){
     var contador = 0
@@ -101,7 +112,7 @@ fun BotonConContador1(text: String = "BotonContador"){
 }
 
 @SuppressLint("UnrememberedMutableState")
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
 @Composable
 fun BotonConContador2(text: String = "BotonContador"){
     var contador: MutableState<Int> = mutableStateOf(0)
@@ -113,7 +124,7 @@ fun BotonConContador2(text: String = "BotonContador"){
 }
 
 
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
 @Composable
 fun BotonConContador3(text: String = "BotonContador"){
     var contador = remember{
@@ -126,7 +137,7 @@ fun BotonConContador3(text: String = "BotonContador"){
     Text(text = "Botón Con Estado Remember->${contador.value}")
 }
 
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
 @Composable
 fun BotonConContador4(text: String = "BotonContador"){
     var contador by remember { mutableStateOf(0)}
@@ -137,7 +148,7 @@ fun BotonConContador4(text: String = "BotonContador"){
     Text(text = "Botón Con Estado Remember con By->${contador}")
 }
 
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
 @Composable
 fun BotonConContador5(text: String = "BotonContador"){
     var contador by rememberSaveable { mutableStateOf(0)}
