@@ -18,6 +18,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableDoubleStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -37,7 +38,7 @@ class MainActivity() : ComponentActivity() {
 
         var op1 by remember { mutableStateOf("") }
         var op2 by remember { mutableStateOf("") }
-        var suma by remember { mutableStateOf(0.0) }
+        var suma by remember { mutableDoubleStateOf(0.0) }
         var sumColor by remember { mutableStateOf(Color.Black) }
 
         val onCalcular = {
