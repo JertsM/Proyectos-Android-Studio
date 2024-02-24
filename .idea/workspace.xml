@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a23f3d58-9f58-4de8-9393-76df9aadc55d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/androidTest/java/com/example/calculadoracompose/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/java/com/example/calculadoracompose/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/java/com/example/calculadoracompose/ui/theme/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/java/com/example/calculadoracompose/ui/theme/Theme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/java/com/example/calculadoracompose/ui/theme/Type.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-anydpi/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/app/src/test/java/com/example/calculadoracompose/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jetpack Compose/CalculadoraCompose/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2bxd5ZwlyvchCm2FWmscj4YhmJB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a23f3d58-9f58-4de8-9393-76df9aadc55d" name="Changes" comment="" />
+      <created>1707160481100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707160481100</updated>
+    </task>
+    <servers />
+  </component>
+</project>
