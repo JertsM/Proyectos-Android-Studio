@@ -8,7 +8,6 @@
     tools:context=".MainActivityMauro"
     tools:ignore="ExtraText"
     android:background="@color/red_light">
-
     <!-- Checkboxes -->
 
     <CheckBox
@@ -19,17 +18,7 @@
         android:text="@string/jamon"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></CheckBox>
-
-    <CheckBox
-        android:id="@+id/cb_aceitunas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="@string/aceitunas"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cb_champi"></CheckBox>
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"></CheckBox>
 
     <CheckBox
         android:id="@+id/cb_champi"
@@ -41,6 +30,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cb_todasOpciones"></CheckBox>
 
+    <!-- Botones -->
+
+    <CheckBox
+        android:id="@+id/cb_aceitunas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/aceitunas"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_champi"></CheckBox>
+
     <CheckBox
         android:id="@+id/cb_todasOpciones"
         android:layout_width="wrap_content"
@@ -51,26 +53,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cb_jamon"></CheckBox>
 
-    <Button
-        android:id="@+id/btnConfirmar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="@string/confirmar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/datosPedido" />
-
-    <!-- Botones -->
-
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cb_aceitunas">
 
@@ -94,6 +83,17 @@
 
     </RadioGroup>
 
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/confirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datosPedido" />
+
     <TextView
         android:id="@+id/infoPedido"
         android:layout_width="wrap_content"
@@ -102,6 +102,7 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/datosPedido"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
         app:layout_constraintVertical_bias="0.0"></TextView>
