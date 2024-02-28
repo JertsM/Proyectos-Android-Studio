@@ -10,7 +10,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.tooling.preview.Preview
 
-import com.example.viewmodel.otromain.UsuarioViewModel
+import Ejercicio4.UsuarioViewModel
 
 //Explicación State
 @Composable

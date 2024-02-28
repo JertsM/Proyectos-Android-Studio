@@ -1,4 +1,4 @@
-package com.example.viewmodel.otromain
+package Ejercicio4
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

@@ -10,8 +10,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.tooling.preview.Preview
 
-import com.example.viewmodel.otromain.UsuarioViewModel
-
 //Explicación State
 @Composable
 fun MainScreenFuncVersionInicial() {//Será el precursor para explicar la necesidad y uso de VM ViewModel->con él no habrá que usar remember
