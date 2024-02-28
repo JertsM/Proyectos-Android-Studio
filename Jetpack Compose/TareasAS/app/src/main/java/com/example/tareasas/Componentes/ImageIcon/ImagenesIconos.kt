@@ -1,4 +1,4 @@
-package com.example.compose_components.examples.Image_Icon
+package com.example.tareasas.Componentes.ImageIcon
 
 import android.widget.Toast
 import androidx.compose.foundation.Image
@@ -13,18 +13,16 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.AlertDialog
-
-import androidx.compose.material.Icon
-import androidx.compose.material.Text
-import androidx.compose.material.TextButton
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Flag
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.IconToggleButton
-
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -38,13 +36,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.example.compose_components.R
-import com.example.compose_components.examples.Dialog.Example1
-import com.example.compose_components.examples.Dialog.Example2
-import com.example.compose_components.examples.Dialog.Example3
-import com.example.compose_components.examples.Dialog.Example4
-import com.example.compose_components.examples.Dialog.Example5
-import com.example.compose_components.examples.Dialog.TutorialAlertDialog
+import com.example.tareasas.R
 import kotlin.random.Random
 
 

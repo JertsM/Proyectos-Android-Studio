@@ -1,4 +1,4 @@
-package com.example.viewmodel.otromain
+package com.example.tareasas.Estado.ViewModel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

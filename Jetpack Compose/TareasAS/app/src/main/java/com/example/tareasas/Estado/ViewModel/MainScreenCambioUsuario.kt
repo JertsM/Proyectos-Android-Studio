@@ -1,4 +1,4 @@
-package com.example.viewmodel.ui.screens
+package com.example.tareasas.Estado.ViewModel
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
@@ -9,8 +9,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.tooling.preview.Preview
-
-import com.example.viewmodel.otromain.UsuarioViewModel
 
 //Explicación State
 @Composable

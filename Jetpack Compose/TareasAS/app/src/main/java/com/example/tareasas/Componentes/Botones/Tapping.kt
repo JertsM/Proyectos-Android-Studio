@@ -78,7 +78,7 @@ fun ClicksBoton() {
 
     val context = LocalContext.current
 
-    androidx.compose.material.Text(
+    Text(
         text = "Probando tipos de click",
         modifier = Modifier
             .background(Color.LightGray)

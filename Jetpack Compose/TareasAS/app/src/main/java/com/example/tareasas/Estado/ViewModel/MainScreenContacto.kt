@@ -1,4 +1,4 @@
-package com.example.viewmodel.ui.screens
+package com.example.tareasas.Estado.ViewModel
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
