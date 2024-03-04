@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background,
                 ) {
-                    EjercicioColumn("Texto 1")
+                    EjercicioColumn2()
                 }
             }
         }
@@ -36,7 +36,24 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun EjercicioColumn(name: String, modifier: Modifier = Modifier) {
+fun EjercicioColumn(modifier: Modifier = Modifier) {
+    Column (
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.SpaceEvenly) {
+        Text(
+            text = "Text 1",
+            modifier = modifier.background(Color.Red))
+        Text(
+            text = "Text 2",
+            modifier = modifier.background(Color.Blue))
+        Text(
+            text = "Text 3",
+            modifier = modifier.background(Color.Green))
+    }
+}
+
+@Composable
+fun EjercicioColumn2(modifier: Modifier = Modifier) {
     Column (
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly) {
@@ -56,6 +73,6 @@ fun EjercicioColumn(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     EjercicioColumnTheme {
-        EjercicioColumn("Texto 1")
+        EjercicioColumn2()
     }
 }
