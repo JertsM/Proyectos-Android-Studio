@@ -32,7 +32,6 @@ import androidx.compose.ui.unit.sp
 import com.example.calculadoracompose.ui.theme.CalculadoraComposeTheme
 
 class MainActivity() : ComponentActivity() {
-    @Preview(showSystemUi = true)
     @Composable
     fun Caluladora() {
 
