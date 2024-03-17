@@ -22,21 +22,39 @@ fun Menu(navController: NavController){
         horizontalAlignment = Alignment.CenterHorizontally
     ){
 
+        Text(text = "Ejercicio Práctica nº1 del uso de Column")
         Button(onClick = { navController.navigate(route = Screens.EjercicioColumn.route) }) {
-            Text(text = "Ejercicio Práctico nº1 del uso de Column")
+            Text(text = "Práctica nº1")
         }
 
+        Text(text = "Ejercicio Práctico nº2 del uso de Column")
         Button(onClick = { navController.navigate(route = Screens.Ejercicio2Column.route) }) {
-            Text(text = "Ejercicio Práctico nº2 del uso de Column")
+            Text(text = "Práctica nº2")
         }
 
+        Text(text = "Ejercicio Práctico nº3 del uso de Column")
         Button(onClick = { navController.navigate(route = Screens.Ejercicio3Column.route) }) {
-            Text(text = "Ejercicio Práctico nº3 del uso de Column")
+            Text(text = "Práctica nº3")
         }
 
+        Text(text = "Ejercicio Práctico nº4 del uso de Column")
         Button(onClick = { navController.navigate(route = Screens.Ejercicio4Column.route) }) {
-            Text(text = "Ejercicio Práctico nº4 del uso de Column")
+            Text(text = "Práctica nº4")
         }
 
+        Text(text = "Ejercicio Práctico nº5 del uso de Column")
+        Button(onClick = { navController.navigate(route = Screens.Ejercicio5Column.route) }) {
+            Text(text = "Práctica nº5")
+        }
+
+        Text(text = "Ejercicio Práctico de Botones")
+        Button(onClick = { navController.navigate(route = Screens.BotonesToast.route)}) {
+            Text(text = "Práctica Nº7")
+        }
+        
+        Text(text = "Calculadora SRMD")
+        Button(onClick = {navController.navigate(route = Screens.Calculadora.route)}) {
+            Text(text = "Calculadora")
+        }
     }
 }

@@ -27,13 +27,44 @@ fun Exercise4Column(modifier: Modifier = Modifier) {
         .width(600.dp)
         .height(600.dp)
         .background(Color.Blue)
-        .padding(40.dp)){
+        .padding(45.dp, 40.dp)){
         Box (modifier = Modifier
-            .width(350.dp)
-            .height(150.dp)
+            .width(800.dp)
+            .height(90.dp)
             .background(Color.Cyan)){
-            Row {
-                Greeting(texto = "hi", modifier = )
+            Row (modifier = Modifier
+                .align(Alignment.TopCenter)){
+                Greeting(texto = "hi")
+            }
+            Row (modifier = Modifier
+                .align(Alignment.TopCenter)){
+                Greeting(texto = "teis", Modifier.padding(15.dp))
+            }
+
+            Row (modifier = Modifier
+                .align(Alignment.TopStart)) {
+                Greeting(texto = "hi", Modifier.padding(0.dp, 30.dp, 5.dp, 5.dp))
+            }
+            Row (modifier = Modifier
+                .align(Alignment.TopStart)){
+                Greeting(texto = "hi", Modifier.padding(0.dp, 45.dp, 5.dp, 5.dp))
+            }
+            Row (modifier = Modifier
+                .align(Alignment.TopStart)){
+                Greeting(texto = "hi", Modifier.padding(0.dp, 60.dp, 5.dp, 5.dp))
+            }
+
+            Row (modifier = Modifier
+                .align(Alignment.TopEnd)){
+                Greeting(texto = "teis", Modifier.padding(0.dp, 30.dp, 0.dp, 5.dp))
+            }
+            Row (modifier = Modifier
+                .align(Alignment.TopEnd)){
+                Greeting(texto = "teis", Modifier.padding(0.dp, 45.dp, 0.dp, 5.dp))
+            }
+            Row (modifier = Modifier
+                .align(Alignment.TopEnd)){
+                Greeting(texto = "teis", Modifier.padding(0.dp, 60.dp, 0.dp, 5.dp))
             }
         }
     }

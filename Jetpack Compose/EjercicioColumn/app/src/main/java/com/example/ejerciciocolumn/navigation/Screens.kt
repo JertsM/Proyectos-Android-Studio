@@ -7,4 +7,7 @@ sealed class Screens (val route: String) {
     object Ejercicio2Column: Screens("Ejercicio2_Column")
     object Ejercicio3Column: Screens("Ejercicio3_Column")
     object Ejercicio4Column: Screens("Ejercicio4_Column")
+    object Ejercicio5Column: Screens("Ejercicio5_Column")
+    object BotonesToast: Screens("BotonesToast")
+    object Calculadora: Screens("Calculadora")
 }
