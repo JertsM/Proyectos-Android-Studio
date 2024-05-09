@@ -47,6 +47,7 @@ val items = listOf(product1, product2, product3)
 fun Format(){
 
     var presu by remember { mutableDoubleStateOf(0.0) }
+    var allSelected by remember { mutableStateOf(false) }
 
     Scaffold(
         topBar = {
@@ -55,7 +56,7 @@ fun Format(){
                     style = TextStyle(
                         fontFamily = FontFamily.Cursive,
                         fontSize = 30.sp,
-                        color = Color.Black
+                        color = Color.White
                     )
                 ) }
             )
@@ -66,7 +67,8 @@ fun Format(){
                 horizontalArrangement = Arrangement.SpaceBetween) {
                 Text(text = "Compra total: $presu",
                     style = TextStyle(
-                        fontSize = 15.sp
+                        fontSize = 15.sp,
+                        color = Color.White
                     ))
             }
         }
@@ -76,11 +78,22 @@ fun Format(){
             .padding(it)) {
             Row (modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceBetween) {
-                Text(text = "Precio total de la compra: $presu",
-                    style = TextStyle(
-                        fontSize = 20.sp,
-                        color = Color.Black
-                    ))
+
+                Column {
+                    checkTotal(seleccion = allSelected, texto = "Seleccionar/Deseleccionar todos los productos:") {
+                        allSelected = it
+                        presu = if (allSelected) {
+                            items.sumOf { it.precio }
+                        } else {
+                            0.0
+                        }
+                    }
+                    Text(text = "Precio total de la compra: $presu",
+                        style = TextStyle(
+                            fontSize = 20.sp,
+                            color = Color.Black
+                        ))
+                }
             }
             LazyColumn (modifier = Modifier.fillMaxSize()) {
                 items(items.size) { i ->
@@ -124,5 +137,16 @@ fun ListItemWithImage (text: String, precioProd: Double, sumarPrecio: (Double) -
         Spacer (modifier = Modifier.width(16.dp))
         Text(text = text,
             style = TextStyle(color = Color.Black))
+    }
+}
+
+@Composable
+fun checkTotal (texto: String, seleccion: Boolean, onSelectedChange: (Boolean) -> Unit) {
+    Row {
+        Checkbox(checked = seleccion, onCheckedChange = onSelectedChange)
+        Text(text = texto,
+            style = TextStyle(
+                fontSize = 16.sp
+            ))
     }
 }
